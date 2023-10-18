@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    overflow: hidden; 
+}
+
+.road{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid red; */
+    background-image: url('https://res.cloudinary.com/dsi2vvtyk/image/upload/v1697469873/background-1_0_qqmbbg.png');
+    background-size: cover;
+    background-repeat: repeat-y;
+    animation: roadmove 3s infinite linear;
+    cursor: url('https://res.cloudinary.com/dsi2vvtyk/image/upload/v1697468944/final_ywgpxd.png')12 12, crosshair;   
+}
+@keyframes roadmove{
+    0%{background-position: 0 0;}
+    100%{background-position: 0 100vh;}
+}
+
+#player{
+    /* border: 2px solid red; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+} 
+
+.JET{
+    height: 45%;
+    z-index: 1;
+}
+
+.score-and-time{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    font-size: 40px;
+    font-family: Gabarito;
+}
+
+.tankers{
+    position: absolute;
+    animation: flying 5s infinite ease-in;
+    /* z-index: -1; */
+    width: 30vw;
+    height: 30vw;
+    max-width: 100px;
+    max-height: 100px; 
+}
+
+@keyframes flying {
+    100% {
+        bottom: -100px;
+    }
+
+    0% {
+        bottom: 1080px;
+    }
+}
+
+@media(max-width: 990px){
+    .road{
+        width: 100vw;
+        background-size: contain;
+    }
+    .JET{
+        height: 30%;
+    }
+}
+
+@media(max-width: 600px){
+    .road{
+        width: 100vw;
+        background-size: contain;
+    }
+    .JET{
+        height: 20%;
+    }
+} 
+
+

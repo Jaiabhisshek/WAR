@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.back-ground{
+    background-image: url('https://res.cloudinary.com/dsi2vvtyk/image/upload/v1697469873/background-1_0_qqmbbg.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    font-size: 70px;
+    font-family: Gabarito;
+}
+
+.thankyou-box{
+    padding-top: 10%;
+}
+
+#play-again-button{
+    margin-top: 2%;
+    height: 60px;
+    width: 180px;
+    font-family: Gabarito;
+    font-size: 20px;
+}
+
+@media(max-width: 990px){
+    .back-ground{
+        font-size: 60px;    
+    }
+    .thankyou-box{
+        padding-top: 50%;
+    }
+    #play-again-button{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+@media(max-width: 600px){
+    .back-ground{
+        font-size: 20px;    
+    }
+    .thankyou-box{
+        padding-top: 50%;
+    }
+    #play-again-button{
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
