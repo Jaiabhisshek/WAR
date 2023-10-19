@@ -5,9 +5,9 @@ let hardBtn = document.getElementById("hardBtn")
 let playerName = document.getElementById("playerName")
 let nickName = document.getElementById("nickName");
 
+
 function storePlayer(event){
     localStorage.setItem("playername", event.target.value);
-    
 }
 
 function storeNickName(event){
@@ -24,10 +24,6 @@ easyBtn.onclick = function(){
         location.href = "game.html";
     }
     
-}
-
-hardBtn.onclick = function(){
-    location.href = "game.html"
 }
 
 instruction.onclick = function(){
