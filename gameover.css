@@ -26,6 +26,17 @@
     font-size: 20px;
 }
 
+.boardText{
+    font-size: xx-large;
+    font-style: italic;
+    background-color: rgba(245, 245, 220, 0.518);
+    border-radius: 20px;
+}
+.leaderboard{
+    width: 40%;
+    margin-left: 30%;
+}
+
 @media(max-width: 990px){
     .back-ground{
         font-size: 60px;    

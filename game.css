@@ -25,7 +25,7 @@ body{
     background-size: cover; 
     background-repeat: repeat-y; 
     animation: roadmove 3s infinite linear;
-    cursor: url('https://res.cloudinary.com/dsi2vvtyk/image/upload/v1697468944/final_ywgpxd.png')12 12, crosshair;   
+    cursor: url(./Assests/aim.png)12 12, crosshair;   
 }
 @keyframes roadmove{
     0%{background-position: 0 0;}
